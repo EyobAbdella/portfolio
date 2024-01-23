@@ -11,9 +11,11 @@ const NavBar = (props: Props) => {
     <div className='text-lg flex justify-between items-center py-5'>
       <div className='text-4xl'>LOGO</div>
       <ul className='hidden md:flex items-center space-x-14'>
-        <li className='text-cyan-500 font-semibold'>About Me</li>
-        <li>Portfolio</li>
-        <li>Experience</li>
+        <li className='text-cyan-500 font-semibold hover:text-cyan-500 duration-300'>
+          About Me
+        </li>
+        <li className='hover:text-cyan-500 duration-300'>Portfolio</li>
+        <li className='hover:text-cyan-500 duration-300'>Experience</li>
         <li className='bg-gradient-to-r from-sky-400 to-blue-500 px-4 py-1 rounded-md text-black'>
           contact
         </li>

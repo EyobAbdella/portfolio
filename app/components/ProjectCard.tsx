@@ -11,17 +11,18 @@ const ProjectCard = (props: Props) => {
         src={ProjectImage}
         alt='project'
       />
+
       <div className='flex flex-wrap gap-2'>
-        <p className='w-fit text-purple-800 rounded-full px-3 text-[0.83rem] bg-[#3c076428]'>
+        <p className='w-fit text-purple-700 rounded-md px-3 text-[0.83rem] bg-[#3c07643b]'>
           ReactJS
         </p>
-        <p className='w-fit text-purple-800 rounded-full px-3 text-[0.83rem] bg-[#3c076428]'>
+        <p className='w-fit text-purple-700 rounded-md px-3 text-[0.83rem] bg-[#3c07643b]'>
           Django
         </p>
-        <p className='w-fit text-purple-800 rounded-full px-3 text-[0.83rem] bg-[#3c076428]'>
+        <p className='w-fit text-purple-700 rounded-md px-3 text-[0.83rem] bg-[#3c07643b]'>
           AWS
         </p>
-        <p className='w-fit text-purple-800 rounded-full px-3 text-[0.83rem] bg-[#3c076428]'>
+        <p className='w-fit text-purple-700 rounded-md px-3 text-[0.83rem] bg-[#3c07643b]'>
           Mysql
         </p>
       </div>
