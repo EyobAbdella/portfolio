@@ -14,7 +14,7 @@ const ProjectDetailCard: React.FC<ProjectDetailCardProps> = ({
 }) => {
   console.log(projectId);
   return (
-    <div className='flex justify-center items-center absolute left-0 h-full w-full bg-[#070719ea]'>
+    <div className='flex justify-center items-center absolute left-0 min-h-screen px-2 w-full bg-[#070719ea]'>
       <div className='max-w-3xl px-5 pb-7 pt-4 space-y-4 bg-[#131329] rounded-2xl'>
         <Image
           className='ml-auto cursor-pointer h-5 w-5 mb-5'

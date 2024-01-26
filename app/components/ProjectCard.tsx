@@ -5,7 +5,7 @@ type Props = {};
 
 const ProjectCard = (props: Props) => {
   return (
-    <div className='flex flex-col justify-between space-y-4 h-[480px] w-80 p-4 rounded-lg bg-[#090916] shadow-lg shadow-blue-950/55 hover:shadow-blue-950/100 hover:bg-[#0a0a16] duration-500 hover:-translate-y-4'>
+    <div className='flex flex-col justify-between space-y-4 h-[480px] w-[355px] sm:w-80 p-4 rounded-lg bg-[#090916] shadow-lg shadow-blue-950/55 hover:shadow-blue-950/100 hover:bg-[#0a0a16] duration-500 hover:-translate-y-4'>
       <Image
         className='h-52 rounded-xl w-full object-cover'
         src={ProjectImage}

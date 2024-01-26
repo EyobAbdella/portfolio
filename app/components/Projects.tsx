@@ -8,7 +8,7 @@ type Props = {};
 const Projects = (props: Props) => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
   return (
-    <div className='space-y-8'>
+    <div id='projects' className='space-y-8'>
       <h1 className='text-3xl font-semibold text-center'>PROJECTS</h1>
       <div className='flex flex-wrap justify-center gap-10'>
         {Array.from({ length: 6 }).map((_, index) => (

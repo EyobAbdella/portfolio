@@ -5,7 +5,7 @@ type Props = {};
 
 const AboutSection = (props: Props) => {
   return (
-    <div className='flex flex-wrap gap-20 md:space-y-0l space-y-40l py-5'>
+    <div id='about' className='flex flex-wrap gap-20 py-5'>
       <div className='relative h-full mx-auto'>
         <Image
           className='rounded-lg'
@@ -29,10 +29,10 @@ const AboutSection = (props: Props) => {
           libero quam nobis tenetur laudantium minus debitis numquam
         </p>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mt-10'>
-          <button className='mx-auto text-xl font-semibold w-48 py-2.5 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500'>
+          <button className='mx-auto text-xl font-semibold w-56 sm:w-48 py-4 md:py-2.5 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500'>
             HIRE ME
           </button>
-          <button className='mx-auto flex items-center justify-center text-xl font-semibold w-48 py-2.5 rounded-lg border border-blue-500'>
+          <button className='mx-auto flex items-center justify-center text-xl font-semibold w-56 sm:w-48 py-2.5 rounded-lg border border-blue-500'>
             <Image src={Download} width={40} height={50} alt='download' />
             <p>RESUME</p>
           </button>
