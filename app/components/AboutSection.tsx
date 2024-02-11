@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Profile from "../../public/profile.jpg";
+import Profile from "../../public/profile.png";
 import Download from "../../public/download.svg";
 type Props = {};
 
