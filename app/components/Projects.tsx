@@ -13,7 +13,7 @@ const Projects = (props: Props) => {
       <div className='max-w-xl mx-auto'>
         <p className='text-center mb-5 text-gray-400 text-xl'>
           I have experience working on various web development projects. Below
-          are some of the I've worked on.
+          are some of the I&apos;ve worked on.
         </p>
       </div>
       <div className='flex flex-wrap justify-center gap-10'>

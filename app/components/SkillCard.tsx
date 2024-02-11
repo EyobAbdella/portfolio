@@ -19,7 +19,9 @@ const SkillCard: React.FC<SkillCardProps> = ({ title, icons }) => {
       </h1>
       <div className='flex flex-wrap gap-3.5 items-center justify-center'>
         {icons.map((icon, index) => (
-          <div className='flex items-center space-x-2 w-fit rounded-md border border-slate-400 px-3 py-2 h-fit'>
+          <div
+            key={index}
+            className='flex items-center space-x-2 w-fit rounded-md border border-slate-400 px-3 py-2 h-fit'>
             <Image src={icon.image} width={30} height={30} alt='react' />
             <p>{icon.title}</p>
           </div>

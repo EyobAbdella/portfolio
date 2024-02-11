@@ -1,11 +1,10 @@
 import Image from "next/image";
-import EmailSection from "./EmailSection";
 import Link from "next/link";
 import EmailIcon from "../../public/email.svg";
-import FacebookIcon from "../../public/facebook.svg";
+import LinkedIn from "../../public/linkedin.svg";
 import TwitterIcon from "../../public/twitter.svg";
 import UpworkIcon from "../../public/upwork.svg";
-import LinkedIn from "../../public/linkedin.svg";
+import EmailSection from "./EmailSection";
 
 type Props = {};
 
@@ -21,9 +20,9 @@ const Contact = (props: Props) => {
           <div className='px-4'>
             <h1 className='text-xl mb-2'>Drop Me a Message</h1>
             <p className='max-w-md text-slate-400'>
-              I'm currently looking for new opportunities, my inbox is always
-              open. Whether you have a question or just want to say hi, I'll try
-              my best to get back to you!
+              I&apos;m currently looking for new opportunities, my inbox is
+              always open. Whether you have a question or just want to say hi,
+              I&apos;ll try my best to get back to you!
             </p>
             <div className='flex items-center gap-2 mt-4 text-slate-200'>
               <Image
