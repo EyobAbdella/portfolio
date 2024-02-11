@@ -12,22 +12,20 @@ type Props = {};
 const Contact = (props: Props) => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className='relative h-[450px] w-full mt-20'>
+    <div id='contact' className='relative h-[450px] w-full mt-20'>
       <div className='hidden lg:flex rounded-full absolute -top-16 -left-16  bg-gradient-to-br from-blue-900 to-purple-[#581C87] h-52 w-52'></div>
       <div className='hidden lg:flex rounded-l-full  absolute -top-16 right-0 bg-gradient-to-br from-purple-900 to-blue-[#1E3A8A] h-52 w-32'></div>
       <div className='rounded-none lg:rounded-t-[8rem] min-h-full w-full bg-gradient-to-br from-blue-950 to-purple-900'>
         <h1 className='text-center text-4xl font-semibold pt-5'>Contact</h1>
-        <div className='flex items-start justify-around mt-12'>
-          <div>
+        <div className='grid grid-cols-1 md:grid-cols-2 place-items-center mt-12'>
+          <div className='px-4'>
             <h1 className='text-xl mb-2'>Drop Me a Message</h1>
-            <p className='max-w-sm text-slate-400'>
+            <p className='max-w-md text-slate-400'>
               I'm currently looking for new opportunities, my inbox is always
               open. Whether you have a question or just want to say hi, I'll try
               my best to get back to you!
             </p>
-            <Link
-              href='#'
-              className='flex items-center gap-2 mt-4 text-slate-200'>
+            <div className='flex items-center gap-2 mt-4 text-slate-200'>
               <Image
                 className='rounded-lg shadow-inner px-3 py-2.5 box-content bg-blue-900'
                 src={EmailIcon}
@@ -36,19 +34,7 @@ const Contact = (props: Props) => {
                 alt='email'
               />
               <p>eyobabdellasharo@gmail.com</p>
-            </Link>
-            {/* <Link
-              href='https://www.facebook.com/eyob.tashome.3'
-              className='flex items-center gap-2 mt-4 '>
-              <Image
-                className='rounded-lg shadow-inner px-3 py-2.5 box-content bg-blue-900'
-                src={FacebookIcon}
-                width={25}
-                height={25}
-                alt='email'
-              />
-              <p>Facebook</p>
-            </Link> */}
+            </div>
             <Link
               href='https://twitter.com/EyobAbdella1'
               className='flex items-center gap-2 mt-4 '>
@@ -61,7 +47,9 @@ const Contact = (props: Props) => {
               />
               <p>Twitter</p>
             </Link>
-            <Link href='#' className='flex items-center gap-2 mt-4 '>
+            <Link
+              href='https://www.upwork.com/freelancers/~0148e04c027a673878'
+              className='flex items-center gap-2 mt-4 '>
               <Image
                 className='rounded-lg shadow-inner p-3 box-content bg-blue-900'
                 src={UpworkIcon}
@@ -71,7 +59,9 @@ const Contact = (props: Props) => {
               />
               <p>Upwork</p>
             </Link>
-            <Link href='#' className='flex items-center gap-2 mt-4 '>
+            <Link
+              href='https://www.linkedin.com/in/eyob-abdella-532554262'
+              className='flex items-center gap-2 mt-4 '>
               <Image
                 className='rounded-lg shadow-inner p-3 box-content bg-blue-900'
                 src={LinkedIn}
@@ -87,7 +77,9 @@ const Contact = (props: Props) => {
         <div className='border-t border-slate-400 pt-5 mt-14 px-4'>
           <div className='flex justify-between items-center'>
             <div className='text-2xl'>LOGO</div>
-            <p className='text-sm'>&copy; {currentYear} EyobTech</p>
+            <p className='text-sm md:mx-auto'>
+              &copy; {currentYear} EyobTech. All rights reserved.
+            </p>
           </div>
         </div>
       </div>

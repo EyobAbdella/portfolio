@@ -15,7 +15,7 @@ export default function Home() {
         <Projects />
         <SkillSection />
       </main>
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 }

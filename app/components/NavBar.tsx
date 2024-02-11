@@ -7,29 +7,29 @@ import Link from "next/link";
 type Props = {};
 
 const NavBar = (props: Props) => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState<boolean>(false);
   return (
     <div className='text-lg flex justify-between items-center py-2 md:py-5'>
-      <div className='text-xl z-50'>LOGO</div>
-      <div className='hidden md:flex items-center space-x-14'>
+      <div className='text-3xl z-50'>LOGO</div>
+      <div className='hidden md:flex items-center space-x-8 lg:space-x-14'>
         <Link
           href='#about'
-          className='text-cyan-500 font-semibold hover:text-cyan-500 duration-300'>
+          className='text-slate-100  hover:text-cyan-500 duration-300'>
           About Me
         </Link>
         <Link
           href='#projects'
-          className='text-cyan-500 font-semibold hover:text-cyan-500 duration-300'>
+          className='text-slate-100  hover:text-cyan-500 duration-300'>
           Projects
         </Link>
         <Link
-          href='about'
-          className='text-cyan-500 font-semibold hover:text-cyan-500 duration-300'>
+          href='#skills'
+          className='text-slate-100  hover:text-cyan-500 duration-300'>
           Skills
         </Link>
         <Link
           href='#contact'
-          className='text-cyan-500 font-semibold hover:text-cyan-500 duration-300'>
+          className='text-slate-100  hover:text-cyan-500 duration-300'>
           contact
         </Link>
         <Link
@@ -53,26 +53,31 @@ const NavBar = (props: Props) => {
         }`}>
         <Link
           href='#about'
-          className='text-cyan-500 font-semibold hover:text-cyan-500 duration-300'>
+          onClick={() => setNav(!nav)}
+          className='text-slate-100  hover:text-cyan-500 duration-300'>
           About Me
         </Link>
         <Link
           href='#projects'
-          className='text-cyan-500 font-semibold hover:text-cyan-500 duration-300'>
+          onClick={() => setNav(!nav)}
+          className='text-slate-100  hover:text-cyan-500 duration-300'>
           Projects
         </Link>
         <Link
-          href='about'
-          className='text-cyan-500 font-semibold hover:text-cyan-500 duration-300'>
-          Experience
+          href='#skills'
+          onClick={() => setNav(!nav)}
+          className='text-slate-100  hover:text-cyan-500 duration-300'>
+          Skills
         </Link>
         <Link
           href='#contact'
-          className='text-cyan-500 font-semibold hover:text-cyan-500 duration-300'>
+          onClick={() => setNav(!nav)}
+          className='text-slate-100  hover:text-cyan-500 duration-300'>
           contact
         </Link>
         <Link
           href='https://github.com/dev9823'
+          onClick={() => setNav(!nav)}
           className='duration-200 rounded-full px-5 py-2.5 border border-indigo-800 text-sm text-indigo-300 hover:bg-indigo-800 hover:text-slate-300'>
           Github Profile
         </Link>

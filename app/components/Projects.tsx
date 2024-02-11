@@ -10,6 +10,12 @@ const Projects = (props: Props) => {
   return (
     <div id='projects' className='space-y-8'>
       <h1 className='text-3xl font-semibold text-center'>PROJECTS</h1>
+      <div className='max-w-xl mx-auto'>
+        <p className='text-center mb-5 text-gray-400 text-xl'>
+          I have experience working on various web development projects. Below
+          are some of the I've worked on.
+        </p>
+      </div>
       <div className='flex flex-wrap justify-center gap-10'>
         {Array.from({ length: 6 }).map((_, index) => (
           <div key={index} onClick={() => setSelectedProject(index)}>

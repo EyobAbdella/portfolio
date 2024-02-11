@@ -58,8 +58,16 @@ const SkillSection = (props: Props) => {
   ];
 
   return (
-    <div>
-      <h1 className='text-2xl font-semibold text-center mb-10'>Skill</h1>
+    <div id='skills'>
+      <h1 className='text-5xl font-semibold text-center mb-10 text-gray-200'>
+        Skills
+      </h1>
+      <div className='max-w-xl mx-auto mb-8'>
+        <p className='text-center text-gray-400 text-xl'>
+          These are some of the abilities that I have been developing over the
+          last four years.
+        </p>
+      </div>
       <div className='grid grid-cols-1 gap-12 xl:grid-cols-2 place-content-center'>
         <SkillCard title='Frontend' icons={frontend} />
         <SkillCard title='Backend' icons={backend} />
