@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Hamburger from "../../public/hamburger.svg";
 import Close from "../../public/close.svg";
+import LOGO from "../../public/logo.svg";
 import Link from "next/link";
 type Props = {};
 
@@ -10,7 +11,8 @@ const NavBar = (props: Props) => {
   const [nav, setNav] = useState<boolean>(false);
   return (
     <div className='text-lg flex justify-between items-center py-2 md:py-5'>
-      <div className='text-3xl z-50'>LOGO</div>
+      {/* <div className='text-3xl z-50'>LOGO</div> */}
+      <Image src={LOGO} width={100} height={100} alt='logo' />
       <div className='hidden md:flex items-center space-x-8 lg:space-x-14'>
         <Link
           href='#about'
