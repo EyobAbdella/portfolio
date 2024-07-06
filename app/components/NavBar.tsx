@@ -11,7 +11,6 @@ const NavBar = (props: Props) => {
   const [nav, setNav] = useState<boolean>(false);
   return (
     <div className='text-lg flex justify-between items-center py-2 md:py-5'>
-      {/* <div className='text-3xl z-50'>LOGO</div> */}
       <Image src={LOGO} width={100} height={100} alt='logo' />
       <div className='hidden md:flex items-center space-x-8 lg:space-x-14'>
         <Link
@@ -35,7 +34,7 @@ const NavBar = (props: Props) => {
           contact
         </Link>
         <Link
-          href='https://github.com/dev9823'
+          href='https://github.com/EyobAbdella'
           className='duration-200 rounded-full px-5 py-2.5 border border-indigo-800 text-sm text-indigo-300 hover:bg-indigo-800 hover:text-slate-300'>
           Github Profile
         </Link>
